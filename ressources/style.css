@@ -7,60 +7,131 @@
 body {
   background-color: #0b0f17;
   color: #e6eaf2;
-
+  font-family: "Inter";
 }
 
 .title {
   font-family: "Poppins";
 }
 
-p,
-li,
-a {
-  font-family: "Inter";
+main {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 45px;
 }
 
 /* --- HEADER SECTION */
 
-header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top:0px;
-    left: 0px;
-    right: 0px;
-    height: 70px;
-    border-bottom: 1px solid red;
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  border-bottom: 1px solid #e6eaf2;
 }
 
-#header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px;
-    padding: 10px;
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  padding: 10px;
 }
 
-#header-container p{
- font-size: 22px
+#header-container p {
+  font-size: 22px;
 }
 
-#header-container li{
-    display: inline-block;
-    margin-right: 22px;
+#header-container li {
+  display: inline-block;
+  margin-right: 22px;
 }
 
-#header-container button{
-    padding: 8px 20px;
-    background-color: #e6eaf2;
+#header-container button {
+  padding: 8px 20px;
+  background-color: #e6eaf2;
 }
 
-#header-container a{
-    text-decoration: none;
-    color: #e6eaf2;
+#header-container button:hover {
+  background-color: #6c5ce7;
+}
+
+#header-container a {
+  text-decoration: none;
+  color: #e6eaf2;
+}
+
+#header-container a:hover {
+  color: #6c5ce7;
 }
 
 /* --- HERO SECTION -- */
 
+#main-section {
+  width: 1200px;
+  height: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(11, 15, 23, 0.7),
+      rgba(11, 15, 23, 0.7)
+    ),
+    url("./img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #e6eaf2;
+}
+
+#main-section h1 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#main-section p {
+  text-align: justify;
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+#main-button button {
+  font-family: "Inter";
+  border-radius: 8px;
+  padding: 10px 30px;
+  margin-right: 10px;
+}
+
+#main-button button:hover {
+  cursor: pointer;
+}
+
+#accent {
+  background-color: #6c5ce7;
+}
+
+#outline {
+  background-color: rgb(255, 255, 223);
+}
+
+/* --- SERVICES CARDS SECTION --- */
+
+#service {
+  width: 1200px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: centerS;
+}
